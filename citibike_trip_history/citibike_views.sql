@@ -6,17 +6,17 @@ create or replace view `cse-6242-sp22-nyatl.CITIBIKE.citibike_trip_201806_202101
     -- Date/Time, Station Info, Lat/Lon
       datetime(starttime) as started_at
     , datetime(stoptime) as ended_at
-    , cast(start_station_id as int64) as start_station_id
+    , cast(start_station_id as string) as start_station_id
     , cast(start_station_name as string) as start_station_name
     , cast(start_station_latitude as float64) as start_lat
     , cast(start_station_longitude as float64) as start_lng
-    , cast(end_station_id as int64) as end_station_id
+    , cast(end_station_id as string) as end_station_id
     , cast(end_station_name as string) as end_station_name
     , cast(end_station_latitude as float64) as end_lat
     , cast(end_station_longitude as float64) as end_lng
 
     -- Other Attributes
-    , cast(tripduration as int64) as trip_duration
+    , datetime_diff(datetime(stoptime), datetime(starttime), minute) as trip_duration_mins
     , cast(bikeid as int64) as bike_id
     , cast(usertype as string) as user_type -- values: Subscriber, Consumer
     , cast(birth_year as int64) as birth_year -- 4 digit year
@@ -32,16 +32,17 @@ create or replace view `cse-6242-sp22-nyatl.CITIBIKE.citibike_trip_202102_onward
     -- Date/Time, Station Info, Lat/Lon
       datetime(started_at) as started_at
     , datetime(ended_at) as ended_at
-    , cast(start_station_id as int64) as start_station_id
+    , cast(start_station_id as string) as start_station_id
     , cast(start_station_name as string) as start_station_name
     , cast(start_lat as float64) as start_lat
     , cast(start_lng as float64) as start_lng
-    , cast(end_station_id as int64) as end_station_id
+    , cast(end_station_id as string) as end_station_id
     , cast(end_station_name as string) as end_station_name
     , cast(end_lat as float64) as end_lat
     , cast(end_lng as float64) as end_lng
 
     -- Other Attributes
+    , datetime_diff(datetime(ended_at), datetime(started_at), minute) as trip_duration_mins
     , cast(rideable_type as string) as rideable_type -- values: electric_bike, docked_bike, classic_bike
     , cast(member_casual as string) as member_casual -- values: member, casual
     , cast(ride_id as string) as ride_id
@@ -56,17 +57,17 @@ create or replace view `cse-6242-sp22-nyatl.CITIBIKE.citibike_trip_bq_public`
     -- Date/Time, Station Info, Lat/Lon
       starttime as started_at
     , stoptime as ended_at
-    , start_station_id
+    , cast(start_station_id as string) as start_station_id
     , start_station_name
     , start_station_latitude as start_lat
     , start_station_longitude as start_lng
-    , end_station_id
+    , cast(end_station_id as string) as end_station_id
     , end_station_name
     , end_station_latitude as end_lat
     , end_station_longitude as end_lng
 
     -- Other Attributes
-    , tripduration as trip_duration
+    , datetime_diff(stoptime, starttime, minute) as trip_duration_mins
     , bikeid as bike_id
     , usertype as user_type -- values: Subscriber, Consumer
     , birth_year as birth_year
@@ -90,7 +91,7 @@ create or replace view `cse-6242-sp22-nyatl.CITIBIKE.citibike_trip`
     , end_station_name
     , end_lat
     , end_lng
-    , trip_duration
+    , trip_duration_mins
     , bike_id
     , user_type
     , birth_year
@@ -114,7 +115,7 @@ create or replace view `cse-6242-sp22-nyatl.CITIBIKE.citibike_trip`
     , end_station_name
     , end_lat
     , end_lng
-    , trip_duration
+    , trip_duration_mins
     , bike_id
     , user_type
     , birth_year
@@ -138,7 +139,7 @@ create or replace view `cse-6242-sp22-nyatl.CITIBIKE.citibike_trip`
     , end_station_name
     , end_lat
     , end_lng
-    , cast(null as int64) as trip_duration
+    , trip_duration_mins
     , cast(null as int64) as bike_id
     , cast(null as string) as user_type
     , cast(null as int64) as birth_year

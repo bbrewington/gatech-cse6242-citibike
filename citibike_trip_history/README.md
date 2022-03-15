@@ -25,7 +25,7 @@
 
 ### Data Dictionary for view citibike_trip
 | column name | data type | description |
-|---|---|---|---|
+|---|---|---|
 | started_at | datetime | when ride started |
 | ended_at | datetime | when ride ended |
 | start_station_id | string | station id ride started at |

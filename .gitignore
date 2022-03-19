@@ -6,3 +6,4 @@
 *.csv
 *.Rproj
 temp*
+dbt_venv

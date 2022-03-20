@@ -1,0 +1,98 @@
+
+version: 2
+
+models:
+  - name: stg_citibike_trip
+    description: "Citibike trip raw records combined from BigQuery Public & AWS CSV's"
+    columns:
+      - name: started_at
+        description: "when ride started"
+      - name: ended_at
+        description: "when ride ended"
+      - name: start_station_id
+        description: "station id ride started at"
+      - name: start_station_name
+        description: "station name ride started at"
+      - name: start_lat
+        description: "latitude ride started at"
+      - name: start_lng
+        description: "longitude ride started at"
+      - name: end_station_id
+        description: "station id ride ended at"
+      - name: end_station_name
+        description: "station name ride ended at"
+      - name: end_lat
+        description: "latitude ride ended at"
+      - name: end_lng
+        description: "longitude ride ended at"
+      - name: trip_duration_mins
+        description: "minutes from started_at to ended_at"
+      - name: bike_id
+        description: "unique identifier of bike"
+      - name: user_type
+        description: "one of Customer, Subscriber, or NULL"
+        tests:
+          - accepted_values:
+              values: ['Customer', 'Subscriber']
+      - name: birth_year
+        description: "rider's birth year (started populating Feb 1, 2021)"
+      - name: gender
+        description: "rider's gender (started populating Feb 1, 2021)"
+      - name: rideable_type
+        description: "Feb 2021 - May 2021: all docked_bike w/ tiny amt of elecric_bike.  June 2021: 35% classic_bike, 65% docked_bike.  July 2021 forward: 98.5-100% classic_bike, 0-1.5% docked_bike"
+      - name: member_casual
+        description: "type of rider membership.  values: member, casual (started populating Feb 1, 2021)"
+        tests:
+          - accepted_values:
+              values: ['member','casual']
+      - name: ride_id
+        description: "unique identifier for ride (started populating Feb 1, 2021)"
+      - name: source
+        description: "data source"
+  - name: citibike_trip_cleaned
+    description: "Citibike trip raw records combined from BigQuery Public & AWS CSV's - cleaned using accepted data cleaning rules"
+    columns:
+      - name: started_at
+        description: "when ride started"
+      - name: ended_at
+        description: "when ride ended"
+      - name: start_station_id
+        description: "station id ride started at"
+      - name: start_station_name
+        description: "station name ride started at"
+      - name: start_lat
+        description: "latitude ride started at"
+      - name: start_lng
+        description: "longitude ride started at"
+      - name: end_station_id
+        description: "station id ride ended at"
+      - name: end_station_name
+        description: "station name ride ended at"
+      - name: end_lat
+        description: "latitude ride ended at"
+      - name: end_lng
+        description: "longitude ride ended at"
+      - name: trip_duration_mins
+        description: "minutes from started_at to ended_at"
+      - name: bike_id
+        description: "unique identifier of bike"
+      - name: user_type
+        description: "one of Customer, Subscriber, or NULL"
+        tests:
+          - accepted_values:
+              values: ['Customer', 'Subscriber']
+      - name: birth_year
+        description: "rider's birth year (started populating Feb 1, 2021)"
+      - name: gender
+        description: "rider's gender (started populating Feb 1, 2021)"
+      - name: rideable_type
+        description: "Feb 2021 - May 2021: all docked_bike w/ tiny amt of elecric_bike.  June 2021: 35% classic_bike, 65% docked_bike.  July 2021 forward: 98.5-100% classic_bike, 0-1.5% docked_bike"
+      - name: member_casual
+        description: "type of rider membership.  values: member, casual (started populating Feb 1, 2021)"
+        tests:
+          - accepted_values:
+              values: ['member','casual']
+      - name: ride_id
+        description: "unique identifier for ride (started populating Feb 1, 2021)"
+      - name: source
+        description: "data source"

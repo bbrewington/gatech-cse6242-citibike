@@ -6,3 +6,6 @@
 *.csv
 *.Rproj
 temp*
+venv_dbt
+.idea
+__pycache__

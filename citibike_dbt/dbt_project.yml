@@ -24,4 +24,4 @@ models:
       +materialized: view
       +persist_docs:
         columns: true
-    mart:
+    metrics:

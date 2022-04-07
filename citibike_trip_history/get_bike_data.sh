@@ -211,3 +211,7 @@ gsutil rm gs://citibike_trip_history/202112-citibike-tripdata.csv.zip
 curl https://s3.amazonaws.com/tripdata/202201-citibike-tripdata.csv.zip | gsutil cp - gs://citibike_trip_history/202201-citibike-tripdata.csv.zip
 gsutil cat gs://citibike_trip_history/202201-citibike-tripdata.csv.zip | zcat | gsutil cp - gs://citibike_trip_history/202201-citibike-tripdata.csv
 gsutil rm gs://citibike_trip_history/202201-citibike-tripdata.csv.zip
+
+curl https://s3.amazonaws.com/tripdata/202202-citibike-tripdata.csv.zip | gsutil cp - gs://citibike_trip_history/202202-citibike-tripdata.csv.zip
+gsutil cat gs://citibike_trip_history/202202-citibike-tripdata.csv.zip | zcat | gsutil cp - gs://citibike_trip_history/202202-citibike-tripdata.csv
+gsutil rm gs://citibike_trip_history/202202-citibike-tripdata.csv.zip

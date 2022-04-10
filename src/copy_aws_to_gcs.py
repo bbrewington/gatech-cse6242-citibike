@@ -54,11 +54,11 @@ def aws_to_gcs(aws_bucket, obj_key, gcs_bucket):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('aws_bucket', default='tripdata')
-    parser.add_argument('aws_access_key_id')
-    parser.add_argument('aws_secret_access_key')
-    parser.add_argument('project_id', default='cse-6242-sp22-nyatl')
-    parser.add_argument('gcs_bucket', default='citibike_trip_history')
+    parser.add_argument('--aws_bucket', default='tripdata')
+    parser.add_argument('--aws_access_key_id')
+    parser.add_argument('--aws_secret_access_key')
+    parser.add_argument('--project_id', default='cse-6242-sp22-nyatl')
+    parser.add_argument('--gcs_bucket', default='citibike_trip_history')
     parser.add_argument('--aws_file')
     parser.add_argument('--aws_exclude_pattern', default='(JC-)|(\d{4}-\d{4})')
 

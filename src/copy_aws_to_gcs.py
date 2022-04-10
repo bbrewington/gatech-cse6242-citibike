@@ -42,7 +42,6 @@ def aws_to_gcs(aws_bucket, obj_key, gcs_bucket):
     elif obj_key.endswith('.zip'):
         key_csv = obj_key[:-4] + '.csv'
 
-    gcs_bucket = 'citibike_trip_history_temp'
     gcs_zip_folder = f'gs://{gcs_bucket}/zipped'
     gcs_url_zip = f'{gcs_zip_folder}/{obj_key}'
     gcs_url_csv = f'gs://{gcs_bucket}/{key_csv}'

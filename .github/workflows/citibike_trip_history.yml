@@ -30,7 +30,8 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install --upgrade protobuf
-        pip install --upgrade boto3 google-cloud-storage
+        pip install boto3
+        pip install google-cloud-storage google-cloud-bigquery
 
     - name: Extract from AWS, Load to GCS
       run: |

@@ -33,12 +33,16 @@ jobs:
         pip install --upgrade boto3 google-cloud-storage
 
     - name: Extract from AWS, Load to GCS
-      run: python src/copy_aws_to_gcs.py --aws_access_key_id ${{ secrets.AWS_ACCESS_KEY }} --aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-
+      run: python src/copy_aws_to_gcs.py tripdata \
+        ${{ secrets.AWS_ACCESS_KEY }} ${{ secrets.AWS_SECRET_ACCESS_KEY }} \
+        cse-6242-sp22-nyatl citibike_trip_history \
+        --aws_exclude_pattern '(JC-)|(\d{4}-\d{4})'
+    
     - name: Load from GCS to GBQ
       run: python src/gcs_to_gbq.py
     
   citibike_trip_history_T:
+    needs: citibike_trip_history_EL
     runs-on: ubuntu-latest
     permissions:
       contents: 'read'

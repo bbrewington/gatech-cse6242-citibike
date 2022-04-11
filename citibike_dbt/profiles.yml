@@ -1,0 +1,22 @@
+citibike_dbt:
+  target: dev # setting default value
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      keyfile: "{{ env_var('GCP_CREDENTIALS') }}"
+      project: "cse-6242-sp22-nyatl"
+      dataset: "DBT_DEV"
+      threads: 32
+      timeout_seconds: 300
+      priority: interactive
+
+    prod:
+      type: bigquery
+      method: service-account
+      keyfile: "{{ env_var('GCP_CREDENTIALS') }}"
+      project: "cse-6242-sp22-nyatl"
+      dataset: "DBT_PROD"
+      threads: 32
+      timeout_seconds: 300
+      priority: interactive

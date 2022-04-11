@@ -33,7 +33,7 @@ select
 from (
   select *
     , extract(hour from started_at) as started_hour
-  from {{ ref('citibike_trip_cleaned') }}
+  from {{ ref('stg_citibike_trip_cleaned') }}
 ) as citi
 left join {{ ref('geo_data') }} as geo
   on geo.station_name = citi.start_station_name

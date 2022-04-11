@@ -20,8 +20,8 @@ clean-targets:
 
 models:
   citibike_dbt:
-    raw_data:
+    staging:
       +materialized: view
       +persist_docs:
         columns: true
-    metrics:
+    marts:

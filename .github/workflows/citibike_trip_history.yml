@@ -69,7 +69,9 @@ jobs:
       run: pip install --upgrade dbt-bigquery
 
     - name: dbt run (dev environment)
-      run: dbt run --project-dir '$GITHUB_WORKSPACE/data/citibike_dbt' --target dev
+      run: |
+        pwd
+        dbt run --project-dir '$GITHUB_WORKSPACE/data/citibike_dbt' --target dev
     
     - name: dbt test (dev environment)
       run: dbt test --project-dir '$GITHUB_WORKSPACE/data/citibike_dbt' --target dev

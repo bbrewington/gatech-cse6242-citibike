@@ -71,6 +71,7 @@ jobs:
     - name: dbt run (dev environment)
       run: |
         pwd
+        echo $GITHUB_WORKSPACE
         dbt run --project-dir '$GITHUB_WORKSPACE/data/citibike_dbt' --target dev
     
     - name: dbt test (dev environment)

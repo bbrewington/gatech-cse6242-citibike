@@ -69,7 +69,7 @@ jobs:
       run: pip install --upgrade dbt-bigquery
 
     - name: temp step ls
-      run: ls data/citibike_dbt
+      run: ls
 
     - name: dbt run (dev environment)
       run: dbt run --project-dir /data/citibike_dbt --target dev

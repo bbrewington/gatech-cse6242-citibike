@@ -17,7 +17,7 @@ with source as (
         , cast(rideable_type as string) as rideable_type -- values: electric_bike, docked_bike, classic_bike
         , cast(member_casual as string) as member_casual -- values: member, casual
         , cast(ride_id as string) as ride_id
-    from `cse-6242-sp22-nyatl.{{target.dataset}}.citibike_trip_*`
+    from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_*`
     where _TABLE_SUFFIX >= '20210201'
 )
 

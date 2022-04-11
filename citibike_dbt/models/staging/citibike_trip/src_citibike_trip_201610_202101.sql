@@ -18,7 +18,7 @@ with source as (
         , cast(usertype as string) as user_type -- values: Subscriber, Consumer
         , cast(birth_year as int64) as birth_year -- 4 digit year
         , cast(gender as string) as gender -- values: 0, 1, 2
-    from `cse-6242-sp22-nyatl.{{target.dataset}}.citibike_trip_*`
+    from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_*`
     where _TABLE_SUFFIX between '20161001' and '20210101'
 )
 

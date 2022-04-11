@@ -4,7 +4,7 @@ citibike_dbt:
     dev:
       type: bigquery
       method: service-account
-      keyfile: "{{ env_var('GCP_CREDENTIALS') }}"
+      keyfile: "{{ env_var('DBT_BIGQUERY_TOKEN') }}"
       project: "cse-6242-sp22-nyatl"
       dataset: "DBT_DEV"
       threads: 32
@@ -14,7 +14,7 @@ citibike_dbt:
     prod:
       type: bigquery
       method: service-account
-      keyfile: "{{ env_var('GCP_CREDENTIALS') }}"
+      keyfile: "{{ env_var('DBT_BIGQUERY_TOKEN') }}"
       project: "cse-6242-sp22-nyatl"
       dataset: "DBT_PROD"
       threads: 32

@@ -22,6 +22,7 @@ def gcs_to_bigquery(project_id, source_bucket, source_blob, dest_dataset, dest_t
     )
 
     uri = "gs://" + source_bucket + '/' + source_blob
+    print(f'destination info:\n  project_id: {project_id}\n  dest_dataset: {dest_dataset}\n  dest_table: {dest_table}')
     table_id = project_id + '.' + dest_dataset + '.' + dest_table
 
     print(f'writing {source_blob} to {table_id}')

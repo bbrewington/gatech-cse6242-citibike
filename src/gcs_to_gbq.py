@@ -8,8 +8,14 @@ import re
 def gcs_list_blobs(project_id, gcs_bucket, file_regex):
     storage_client = storage.Client(project_id)
     blobs = storage_client.list_blobs(gcs_bucket)
-
-    return [blob.name for blob in blobs if bool(re.search(file_regex, blob.name))]
+    
+    blob_list = []
+    
+    for blob in blobs:
+        if bool(re.search(file_regex, blob.name)) and not bool(re.search('/', blob.name)):
+            blob_list.append(blob)
+    
+    return blob_list
 
 def gcs_to_bigquery(project_id, source_bucket, source_blob, dest_dataset, dest_table, dest_schema):
     client = bigquery.Client(project_id)
@@ -87,14 +93,15 @@ if __name__ == '__main__':
     filelist = gcs_list_blobs(args.project_id, args.gcs_bucket, args.file_regex)
     filelist_prepped = sorted(filelist)
 
-    for filename in filelist_prepped:
-        print(filename)
-        month_key = filename[:6]
-        dest_table = f'{args.gbq_table_prefix}_{month_key}01' # using 01 to enable date sharded tables
-        dest_schema = gbq_schema_201806_202101 if month_key <= '202101' else gbq_schema_202102_onward
+    if len(filelist_prepped) > 0:
+        for filename in filelist_prepped:
+            print(filename)
+            month_key = filename[:6]
+            dest_table = f'{args.gbq_table_prefix}_{month_key}01' # using 01 to enable date sharded tables
+            dest_schema = gbq_schema_201806_202101 if month_key <= '202101' else gbq_schema_202102_onward
 
-        gcs_to_bigquery(project_id=args.project_id, source_bucket=args.gcs_bucket, source_blob=filename, \
-            dest_dataset=args.gbq_dataset, dest_table=dest_table, dest_schema=dest_schema)
-        
-        file_path_to = 'loaded_to_gbq/' + filename
-        gcs_move_file_in_bucket(args.project_id, args.gcs_bucket, filename, file_path_to)
+            gcs_to_bigquery(project_id=args.project_id, source_bucket=args.gcs_bucket, source_blob=filename, \
+                dest_dataset=args.gbq_dataset, dest_table=dest_table, dest_schema=dest_schema)
+            
+            file_path_to = 'loaded_to_gbq/' + filename
+            gcs_move_file_in_bucket(args.project_id, args.gcs_bucket, filename, file_path_to)

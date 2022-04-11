@@ -69,10 +69,12 @@ jobs:
       run: pip install --upgrade dbt-bigquery
 
     - name: dbt run (dev environment)
-      run: dbt run --project-dir citibike_dbt --target dev
+      run: |
+        cd citibike_dbt
+        dbt run --target dev
     
     - name: dbt test (dev environment)
-      run: dbt test --project-dir citibike_dbt --target dev
+      run: dbt test --target dev
     
     - name: dbt run (prod environment) if tests pass
-      run: dbt run --project-dir citibike_dbt --target prod
+      run: dbt run --target prod

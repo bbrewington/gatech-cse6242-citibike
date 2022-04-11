@@ -68,13 +68,10 @@ jobs:
     - name: Install python libraries
       run: pip install --upgrade dbt-bigquery
 
-    - name: dbt run (dev environment)
-      run: |
-        cd citibike_dbt
-        dbt run --target dev
-    
-    - name: dbt test (dev environment)
-      run: dbt test --target dev
-    
-    - name: dbt run (prod environment) if tests pass
-      run: dbt run --target prod
+    - name: dbt-run
+      uses: mwhitaker/dbt-action@master  
+      with:
+        dbt_command: "dbt run --project-dir citibike_dbt --profiles-dir citibike_dbt"
+        dbt_project_folder: "dbt_project"
+      env:
+        DBT_BIGQUERY_TOKEN: ${{ secrets.GCP_CREDENTIALS }}

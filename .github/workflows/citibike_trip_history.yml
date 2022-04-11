@@ -57,21 +57,13 @@ jobs:
     - name: checkout
       uses: actions/checkout@v3
 
-    - id: 'auth'
-      uses: 'google-github-actions/auth@v0'
-      with:
-        credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
-
-    - name: 'Set up Cloud SDK'
-      uses: 'google-github-actions/setup-gcloud@v0'
-
     - name: Install python libraries
       run: pip install --upgrade dbt-bigquery
 
     - name: dbt-run
       uses: mwhitaker/dbt-action@master  
       with:
-        dbt_command: "dbt run --project-dir citibike_dbt"
-        dbt_project_folder: "dbt_project"
+        dbt_command: "dbt run"
+        dbt_project_folder: "citibike_dbt"
       env:
         DBT_BIGQUERY_TOKEN: ${{ secrets.GCP_CREDENTIALS }}

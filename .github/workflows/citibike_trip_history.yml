@@ -2,7 +2,7 @@ name: 'Citibike Trip History: Extract AWS Zip & Load CSV to GCS'
 
 on:
   schedule:
-    - cron: '* 23 * * *'
+    - cron: '0 23 * * *'
   push:
     branches:
       - 'main'

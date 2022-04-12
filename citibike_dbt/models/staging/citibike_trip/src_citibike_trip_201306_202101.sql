@@ -19,6 +19,52 @@ with source as (
         , cast(birth_year as int64) as birth_year -- 4 digit year
         , cast(gender as string) as gender -- values: 0, 1, 2
     from (
+        -- was getting error w/ wildcard pattern / _TABLE_SUFFIX filter
+        -- hence the monstrocity that follows :)
+
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20130601` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20130701` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20130801` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20130901` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20131001` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20131101` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20131201` union all
+
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20140101` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20140201` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20140301` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20140401` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20140501` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20140601` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20140701` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20140801` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20140901` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20141001` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20141101` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20141201` union all
+
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20150101` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20150201` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20150301` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20150401` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20150501` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20150601` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20150701` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20150801` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20150901` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20151001` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20151101` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20151201` union all
+
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20160101` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20160201` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20160301` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20160401` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20160501` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20160601` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20160701` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20160801` union all
+        select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20160901` union all
         select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20161001` union all
         select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20161101` union all
         select * from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_20161201` union all

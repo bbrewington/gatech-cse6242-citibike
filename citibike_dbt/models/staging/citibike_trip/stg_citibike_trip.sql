@@ -41,8 +41,8 @@ select
   , cast(null as string) as rideable_type
   , cast(null as string) as member_casual
   , cast(null as string) as ride_id
-  , 'aws_201610_202101' as source
-from {{ ref('src_citibike_trip_201610_202101') }}
+  , 'aws_201306_202101' as source
+from {{ ref('src_citibike_trip_201306_202101') }}
 
 union all
 

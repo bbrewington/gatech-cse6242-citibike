@@ -48,6 +48,7 @@ models:
         description: "unique identifier for ride (started populating Feb 1, 2021)"
       - name: source
         description: "data source"
+
   - name: stg_citibike_trip_cleaned
     description: "Citibike trip raw records combined from BigQuery Public & AWS CSV's - cleaned using accepted data cleaning rules"
     columns:

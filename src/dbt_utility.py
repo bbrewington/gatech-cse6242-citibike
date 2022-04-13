@@ -28,7 +28,7 @@ def generate_static_dbt_docs(input_html='index.html', output_dir='docs', output_
     with open(os.path.join(dbt_project_path, 'target', 'catalog.json'), 'r') as f:
         json_catalog = json.loads(f.read())
 
-    output_filepath = os.path.join(dbt_project_path, output_dir, output_html)
+    output_filepath = os.path.join(output_dir, output_html)
     with open(output_filepath, 'w') as f:
         new_str = "o=[{label: 'manifest', data: " + json.dumps(json_manifest)
         new_str += "},{label: 'catalog', data: " + json.dumps(json_catalog) + "}]"

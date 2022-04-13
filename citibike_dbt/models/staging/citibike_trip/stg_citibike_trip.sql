@@ -17,30 +17,6 @@ select
   , cast(null as string) as rideable_type
   , cast(null as string) as member_casual
   , cast(null as string) as ride_id
-  , 'bq_public' as source
-from {{ ref('src_citibike_trip_bq_public') }}
-
-union all
-
-select
-    started_at
-  , ended_at
-  , start_station_id
-  , start_station_name
-  , start_lat
-  , start_lng
-  , end_station_id
-  , end_station_name
-  , end_lat
-  , end_lng
-  , trip_duration_mins
-  , bike_id
-  , user_type
-  , birth_year
-  , gender
-  , cast(null as string) as rideable_type
-  , cast(null as string) as member_casual
-  , cast(null as string) as ride_id
   , 'aws_201306_202101' as source
 from {{ ref('src_citibike_trip_201306_202101') }}
 

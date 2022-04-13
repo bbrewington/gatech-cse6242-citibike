@@ -9,6 +9,11 @@ def generate_static_dbt_docs(input_html='index.html', backup_html='index_orig.ht
     """
     search_str = 'o=[i("manifest","manifest.json"+t),i("catalog","catalog.json"+t)]'
 
+    print('temp: pwd')
+    os.system('pwd')
+    print('temp: ls -R')
+    os.system('ls -R')
+    
     with open(os.path.join(dbt_project_path, 'target', input_html), 'r') as f:
         content_index = f.read()
 

@@ -6,6 +6,7 @@ Include details here
 ### Chart
 (this chart produced with [https://github.com/bbrewington/gatech-cse6242-citibike/src/plotly_test.py](plotly_test.py))
 
+<body>
 <div>
     <script type="text/javascript">
         window.PlotlyConfig = {
@@ -533,6 +534,7 @@ Include details here
         };
     </script>
 </div>
+</body>
 
 ### Main Point 2
 Include details here

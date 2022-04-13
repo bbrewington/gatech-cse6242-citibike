@@ -2,7 +2,8 @@ import json
 import os
 import re
 
-def generate_static_dbt_docs(input_html='index.html', backup_html='index_orig.html', output_html='index.html', dbt_project_path='', projects_to_ignore=['dbt', 'dbt_bigquery']):
+def generate_static_dbt_docs(input_html='index.html', backup_html='index_orig.html', output_html='index.html', \
+    dbt_project_path='', projects_to_ignore=['dbt', 'dbt_bigquery']):
     """After running `dbt docs generate`, Export documentation as a static html page
     Taken from Data banana article: https://data-banana.github.io/dbt-generate-doc-in-one-static-html-file.html
     """
@@ -13,7 +14,7 @@ def generate_static_dbt_docs(input_html='index.html', backup_html='index_orig.ht
 
     backup_filepath = os.path.join(dbt_project_path, 'target', backup_html)
     with open(backup_filepath, 'w') as f:
-        print('writing to ' + backup_filepath)
+        print('dbt_utility.generate_static_dbt_docs: writing backup to ' + backup_filepath)
         f.write(content_index)
 
     with open(os.path.join(dbt_project_path, 'target', 'manifest.json'), 'r') as f:
@@ -37,5 +38,14 @@ def generate_static_dbt_docs(input_html='index.html', backup_html='index_orig.ht
         new_str = "o=[{label: 'manifest', data: " + json.dumps(json_manifest)
         new_str += "},{label: 'catalog', data: " + json.dumps(json_catalog) + "}]"
         new_content = content_index.replace(search_str, new_str)
-        print('writing to ' + output_filepath)
+        print('dbt_utility.generate_static_dbt_docs: writing to ' + output_filepath)
         f.write(new_content)
+    
+    return output_filepath
+
+if __name__ == '__main__':
+    final_html_path = 'docs/dbt_docs.html'
+    print('dbt_utility: getting static html')
+    static_html_path = generate_static_dbt_docs()
+    print(f'dbt_utility: copying to {final_html_path}')
+    os.system(f'cp {static_html_path} {final_html_path}')

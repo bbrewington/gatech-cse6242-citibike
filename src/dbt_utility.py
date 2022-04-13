@@ -2,7 +2,7 @@ import json
 import os
 import re
 
-def generate_static_dbt_docs(input_html='index.html', backup_html='index_orig.html', output_html='index.html', \
+def generate_static_dbt_docs(input_html='index.html', output_html='index.html', \
     dbt_project_path='citibike_dbt', projects_to_ignore=['dbt', 'dbt_bigquery']):
     """After running `dbt docs generate`, Export documentation as a static html page
     Taken from Data banana article: https://data-banana.github.io/dbt-generate-doc-in-one-static-html-file.html
@@ -11,11 +11,6 @@ def generate_static_dbt_docs(input_html='index.html', backup_html='index_orig.ht
 
     with open(os.path.join(dbt_project_path, 'target', input_html), 'r') as f:
         content_index = f.read()
-
-    backup_filepath = os.path.join(dbt_project_path, 'target', backup_html)
-    with open(backup_filepath, 'w') as f:
-        print('dbt_utility.generate_static_dbt_docs: writing backup to ' + backup_filepath)
-        f.write(content_index)
 
     with open(os.path.join(dbt_project_path, 'target', 'manifest.json'), 'r') as f:
         json_manifest = json.loads(f.read())
@@ -48,6 +43,6 @@ if __name__ == '__main__':
 
     print('dbt_utility: getting static html')
     static_html_path = generate_static_dbt_docs()
-    
+
     print(f'dbt_utility: copying to {final_html_path}')
     os.system(f'cp {static_html_path} {final_html_path}')

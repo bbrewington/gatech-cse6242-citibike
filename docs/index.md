@@ -4,7 +4,7 @@
 Include details here asdf
 
 ### Chart
-(this chart produced with [https://github.com/bbrewington/gatech-cse6242-citibike/src/plotly_test.py](plotly_test.py))
+(this chart produced with https://github.com/bbrewington/gatech-cse6242-citibike/src/plotly_test.py)
 
 <body>
 <div>

@@ -83,13 +83,14 @@ jobs:
         dbt_project_folder: "citibike_dbt"
       env:
         DBT_BIGQUERY_TOKEN: ${{ secrets.GCP_CREDENTIALS }}
-    
+  
     - name: dbt docs generate
       uses: mwhitaker/dbt-action@master
       with:
-        dbt_command: "dbt docs generate"
+        dbt_command: "dbt docs generate --profiles-dir . --target prod"
+        dbt_project_folder: "citibike_dbt"
       env:
         DBT_BIGQUERY_TOKEN: ${{ secrets.GCP_CREDENTIALS }}
 
-    - name: copy dbt index.html to docs/dbt_docs.html
+    - name: create static dbt index.html, copy to docs/dbt_docs.html
       run: python src/dbt_utility.py

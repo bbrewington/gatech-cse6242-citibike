@@ -4,3 +4,10 @@
 
 layout: home
 ---
+
+# This is a title
+
+### This is a section
+
+1. list item 1
+2. list item 2

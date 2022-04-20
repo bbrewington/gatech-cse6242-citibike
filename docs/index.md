@@ -1,12 +1,16 @@
 # Citibike Analysis
 
-### Main Point 1
-Include details here asdf
+### Stations and Total Rides
 
-### Plotly Example
-(this chart produced with https://github.com/bbrewington/gatech-cse6242-citibike/src/plotly_test.py)
+{% include stations_and_total_rides_scatterplot.html %}
 
-{% include plotly_example.html %}
+### Map: By Year
+
+{% include choropleth_by_year.html %}
+
+### Map: By Time of Day
+
+{% include choropleth_timeofday.html %}
 
 ### Membership Signups
 

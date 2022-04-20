@@ -1,0 +1,722 @@
+year,boro,neighborhood,station_count,ride_count
+2013,Brooklyn,Bedford-Stuyvesant,5,11752
+2013,Brooklyn,Boerum Hill,2,12150
+2013,Brooklyn,Brooklyn Heights,6,40977
+2013,Brooklyn,Clinton Hill,10,36155
+2013,Brooklyn,Columbia Street Waterfront District,1,6610
+2013,Brooklyn,Downtown Brooklyn,7,58305
+2013,Brooklyn,DUMBO,5,26415
+2013,Brooklyn,Fort Greene,13,48060
+2013,Brooklyn,Greenpoint,2,20896
+2013,Brooklyn,Park Slope,1,8299
+2013,Brooklyn,Prospect Heights,3,18363
+2013,Brooklyn,Williamsburg,6,23027
+2013,Manhattan,Battery Park City,4,105588
+2013,Manhattan,Chelsea,19,471031
+2013,Manhattan,Chinatown,5,63528
+2013,Manhattan,Civic Center,4,63772
+2013,Manhattan,Columbus Circle,2,58070
+2013,Manhattan,East Village,19,331738
+2013,Manhattan,Financial District,13,158355
+2013,Manhattan,Flatiron District,2,62148
+2013,Manhattan,Garment District,4,98845
+2013,Manhattan,Gramercy,3,47910
+2013,Manhattan,Greenwich Village,10,204307
+2013,Manhattan,Hell's Kitchen,12,212113
+2013,Manhattan,Herald Square,1,22435
+2013,Manhattan,Hudson Square,2,22947
+2013,Manhattan,Hudson Yards,3,47859
+2013,Manhattan,Kips Bay,7,131405
+2013,Manhattan,Little Italy,4,88432
+2013,Manhattan,Lower East Side,16,186241
+2013,Manhattan,Meatpacking District,1,20150
+2013,Manhattan,Midtown,2,39098
+2013,Manhattan,Midtown East,9,126134
+2013,Manhattan,Midtown South,4,74323
+2013,Manhattan,Murray Hill,3,63978
+2013,Manhattan,NoHo,2,69665
+2013,Manhattan,NoMad,1,20208
+2013,Manhattan,Rose Hill,1,19595
+2013,Manhattan,SoHo,4,80617
+2013,Manhattan,Stuy Town,3,51501
+2013,Manhattan,Theater District,7,154341
+2013,Manhattan,Tribeca,10,141854
+2013,Manhattan,Tudor City,1,8448
+2013,Manhattan,Turtle Bay,6,68728
+2013,Manhattan,Two Bridges,5,31995
+2013,Manhattan,Union Square,3,87808
+2013,Manhattan,West Village,10,228633
+2013,Queens,Astoria,0,0
+2013,Queens,Fresh Pond Junction,0,0
+2013,Queens,Long Island City,0,0
+2013,Queens,Ridgewood,0,0
+2013,Queens,Steinway,0,0
+2013,Queens,Sunnyside,0,0
+2013,Queens,Sunnyside Gardens,0,0
+2013,Queens,Woodside,0,0
+2013,The Bronx,Bronx County,0,0
+2013,The Bronx,Claremont,0,0
+2013,The Bronx,Melrose,0,0
+2013,The Bronx,Mott Haven,0,0
+2013,The Bronx,Woodstock,0,0
+2014,Brooklyn,Bedford-Stuyvesant,5,17231
+2014,Brooklyn,Boerum Hill,2,18792
+2014,Brooklyn,Brooklyn Heights,6,48942
+2014,Brooklyn,Clinton Hill,10,58347
+2014,Brooklyn,Columbia Street Waterfront District,1,9953
+2014,Brooklyn,Downtown Brooklyn,7,65014
+2014,Brooklyn,DUMBO,5,43788
+2014,Brooklyn,Fort Greene,13,74141
+2014,Brooklyn,Greenpoint,2,32390
+2014,Brooklyn,Park Slope,1,11396
+2014,Brooklyn,Prospect Heights,3,22836
+2014,Brooklyn,Williamsburg,6,34057
+2014,Manhattan,Battery Park City,4,167082
+2014,Manhattan,Chelsea,19,764281
+2014,Manhattan,Chinatown,5,113220
+2014,Manhattan,Civic Center,4,96335
+2014,Manhattan,Columbus Circle,2,89009
+2014,Manhattan,East Village,19,556410
+2014,Manhattan,Financial District,14,246695
+2014,Manhattan,Flatiron District,2,97799
+2014,Manhattan,Garment District,4,190660
+2014,Manhattan,Gramercy,3,83824
+2014,Manhattan,Greenwich Village,10,287836
+2014,Manhattan,Hell's Kitchen,13,330856
+2014,Manhattan,Herald Square,1,39610
+2014,Manhattan,Hudson Square,2,42606
+2014,Manhattan,Hudson Yards,3,83417
+2014,Manhattan,Kips Bay,7,220468
+2014,Manhattan,Little Italy,4,168812
+2014,Manhattan,Lower East Side,16,317680
+2014,Manhattan,Meatpacking District,1,32874
+2014,Manhattan,Midtown,2,59495
+2014,Manhattan,Midtown East,9,185171
+2014,Manhattan,Midtown South,5,147870
+2014,Manhattan,Murray Hill,5,137897
+2014,Manhattan,NoHo,2,127609
+2014,Manhattan,NoMad,1,33800
+2014,Manhattan,Rose Hill,1,33585
+2014,Manhattan,SoHo,4,123455
+2014,Manhattan,Stuy Town,3,82916
+2014,Manhattan,Theater District,7,236758
+2014,Manhattan,Tribeca,11,208877
+2014,Manhattan,Tudor City,1,11906
+2014,Manhattan,Turtle Bay,6,105370
+2014,Manhattan,Two Bridges,5,56636
+2014,Manhattan,Union Square,3,145927
+2014,Manhattan,West Village,10,376293
+2014,Queens,Astoria,0,0
+2014,Queens,Fresh Pond Junction,0,0
+2014,Queens,Long Island City,0,0
+2014,Queens,Ridgewood,0,0
+2014,Queens,Steinway,0,0
+2014,Queens,Sunnyside,0,0
+2014,Queens,Sunnyside Gardens,0,0
+2014,Queens,Woodside,0,0
+2014,The Bronx,Bronx County,0,0
+2014,The Bronx,Claremont,0,0
+2014,The Bronx,Melrose,0,0
+2014,The Bronx,Mott Haven,0,0
+2014,The Bronx,Woodstock,0,0
+2015,Brooklyn,Bedford-Stuyvesant,24,39487
+2015,Brooklyn,Boerum Hill,2,20409
+2015,Brooklyn,Brooklyn Heights,6,54966
+2015,Brooklyn,Bushwick,7,10878
+2015,Brooklyn,Clinton Hill,12,69033
+2015,Brooklyn,Columbia Street Waterfront District,1,10939
+2015,Brooklyn,Crown Heights,1,682
+2015,Brooklyn,Downtown Brooklyn,8,73515
+2015,Brooklyn,DUMBO,6,60166
+2015,Brooklyn,Fort Greene,14,90328
+2015,Brooklyn,Greenpoint,17,87827
+2015,Brooklyn,Greenpoint Landing,1,2684
+2015,Brooklyn,Park Slope,1,12791
+2015,Brooklyn,Prospect Heights,3,17859
+2015,Brooklyn,Williamsburg,28,110812
+2015,Manhattan,Battery Park City,4,209423
+2015,Manhattan,Chelsea,19,905723
+2015,Manhattan,Chinatown,5,125077
+2015,Manhattan,Civic Center,4,115649
+2015,Manhattan,Columbus Circle,2,120382
+2015,Manhattan,East Village,19,637649
+2015,Manhattan,Financial District,15,283967
+2015,Manhattan,Flatiron District,2,109347
+2015,Manhattan,Garment District,4,190303
+2015,Manhattan,Gramercy,3,109312
+2015,Manhattan,Greenwich Village,10,353780
+2015,Manhattan,Hell's Kitchen,13,388130
+2015,Manhattan,Herald Square,1,48066
+2015,Manhattan,Hudson Square,3,76147
+2015,Manhattan,Hudson Yards,3,106906
+2015,Manhattan,Kips Bay,6,167260
+2015,Manhattan,Lenox Hill,4,43695
+2015,Manhattan,Lincoln Square,1,11043
+2015,Manhattan,Little Italy,4,200079
+2015,Manhattan,Lower East Side,16,351477
+2015,Manhattan,Meatpacking District,1,48417
+2015,Manhattan,Midtown,2,75603
+2015,Manhattan,Midtown East,10,231428
+2015,Manhattan,Midtown South,5,160693
+2015,Manhattan,Murray Hill,5,268095
+2015,Manhattan,NoHo,2,128208
+2015,Manhattan,Nolan Park,2,4538
+2015,Manhattan,NoMad,1,40371
+2015,Manhattan,Rose Hill,2,58914
+2015,Manhattan,SoHo,4,138993
+2015,Manhattan,Stuy Town,3,98769
+2015,Manhattan,Theater District,7,282685
+2015,Manhattan,Tribeca,10,236399
+2015,Manhattan,Tudor City,1,13737
+2015,Manhattan,Turtle Bay,6,125543
+2015,Manhattan,Two Bridges,5,62003
+2015,Manhattan,Union Square,3,165712
+2015,Manhattan,Upper East Side,11,67434
+2015,Manhattan,Upper West Side,18,132253
+2015,Manhattan,West Village,10,447055
+2015,Manhattan,Yorkville,7,54317
+2015,Queens,Long Island City,9,26700
+2015,Queens,Sunnyside,2,1502
+2015,Queens,Astoria,0,0
+2015,Queens,Fresh Pond Junction,0,0
+2015,Queens,Ridgewood,0,0
+2015,Queens,Steinway,0,0
+2015,Queens,Sunnyside Gardens,0,0
+2015,Queens,Woodside,0,0
+2015,The Bronx,Bronx County,0,0
+2015,The Bronx,Claremont,0,0
+2015,The Bronx,Melrose,0,0
+2015,The Bronx,Mott Haven,0,0
+2015,The Bronx,Woodstock,0,0
+2016,Brooklyn,Bedford-Stuyvesant,25,102470
+2016,Brooklyn,Boerum Hill,4,26417
+2016,Brooklyn,Boerum Hill Historic District,2,5043
+2016,Brooklyn,Brooklyn Heights,8,102141
+2016,Brooklyn,Bushwick,7,40443
+2016,Brooklyn,Carroll Gardens,6,16027
+2016,Brooklyn,Clinton Hill,12,100152
+2016,Brooklyn,Cobble Hill,1,2584
+2016,Brooklyn,Cobble Hill Historic District,8,30829
+2016,Brooklyn,Columbia Street Waterfront District,4,22081
+2016,Brooklyn,Crown Heights,1,2228
+2016,Brooklyn,Downtown Brooklyn,9,103964
+2016,Brooklyn,DUMBO,6,85815
+2016,Brooklyn,Fort Greene,15,128680
+2016,Brooklyn,Gowanus,7,13915
+2016,Brooklyn,Greenpoint,19,239823
+2016,Brooklyn,Greenpoint Landing,1,7775
+2016,Brooklyn,Park Slope,31,111128
+2016,Brooklyn,Prospect Heights,2,22713
+2016,Brooklyn,Red Hook,11,9037
+2016,Brooklyn,Williamsburg,28,288195
+2016,Manhattan,Battery Park City,4,250581
+2016,Manhattan,Carnegie Hill,2,10160
+2016,Manhattan,Chelsea,20,1093461
+2016,Manhattan,Chinatown,5,153296
+2016,Manhattan,Civic Center,4,131814
+2016,Manhattan,Columbus Circle,2,137322
+2016,Manhattan,East Harlem,12,35631
+2016,Manhattan,East Village,19,733776
+2016,Manhattan,Financial District,15,357663
+2016,Manhattan,Flatiron District,2,150036
+2016,Manhattan,Garment District,4,171766
+2016,Manhattan,Gramercy,3,125342
+2016,Manhattan,Greenwich Village,11,430747
+2016,Manhattan,Hell's Kitchen,14,538908
+2016,Manhattan,Herald Square,1,58955
+2016,Manhattan,Hudson Square,4,140013
+2016,Manhattan,Hudson Yards,3,143645
+2016,Manhattan,Kips Bay,5,203844
+2016,Manhattan,Lenox Hill,9,157508
+2016,Manhattan,Lincoln Square,2,37248
+2016,Manhattan,Little Italy,5,233847
+2016,Manhattan,Lower East Side,17,468143
+2016,Manhattan,Manhattan Community Board 11,1,4360
+2016,Manhattan,Manhattan Valley,7,38215
+2016,Manhattan,Meatpacking District,1,37460
+2016,Manhattan,Midtown,2,87121
+2016,Manhattan,Midtown East,9,341036
+2016,Manhattan,Midtown South,5,217364
+2016,Manhattan,Morningside Heights,1,14119
+2016,Manhattan,Murray Hill,5,336144
+2016,Manhattan,NoHo,2,116279
+2016,Manhattan,Nolan Park,2,12321
+2016,Manhattan,NoMad,1,48219
+2016,Manhattan,Rose Hill,2,90372
+2016,Manhattan,SoHo,4,167341
+2016,Manhattan,Stuy Town,4,143520
+2016,Manhattan,Theater District,7,305976
+2016,Manhattan,Tribeca,11,277775
+2016,Manhattan,Tudor City,1,18721
+2016,Manhattan,Turtle Bay,6,154062
+2016,Manhattan,Two Bridges,5,74984
+2016,Manhattan,Union Square,3,195500
+2016,Manhattan,Upper East Side,19,268719
+2016,Manhattan,Upper West Side,29,555730
+2016,Manhattan,West Village,10,501751
+2016,Manhattan,Yorkville,13,227238
+2016,Queens,Long Island City,8,80117
+2016,Queens,Sunnyside,2,5087
+2016,Queens,Astoria,0,0
+2016,Queens,Fresh Pond Junction,0,0
+2016,Queens,Ridgewood,0,0
+2016,Queens,Steinway,0,0
+2016,Queens,Sunnyside Gardens,0,0
+2016,Queens,Woodside,0,0
+2016,The Bronx,Bronx County,0,0
+2016,The Bronx,Claremont,0,0
+2016,The Bronx,Melrose,0,0
+2016,The Bronx,Mott Haven,0,0
+2016,The Bronx,Woodstock,0,0
+2017,Brooklyn,Bedford-Stuyvesant,25,150005
+2017,Brooklyn,Boerum Hill,5,38240
+2017,Brooklyn,Boerum Hill Historic District,2,17131
+2017,Brooklyn,Brooklyn Community District 17,1,440
+2017,Brooklyn,Brooklyn Heights,8,132471
+2017,Brooklyn,Bushwick,7,56414
+2017,Brooklyn,Carroll Gardens,6,54958
+2017,Brooklyn,Clinton Hill,13,134091
+2017,Brooklyn,Cobble Hill,1,8243
+2017,Brooklyn,Cobble Hill Historic District,8,107216
+2017,Brooklyn,Columbia Street Waterfront District,4,43463
+2017,Brooklyn,Crown Heights,8,6679
+2017,Brooklyn,Downtown Brooklyn,9,165143
+2017,Brooklyn,DUMBO,6,110522
+2017,Brooklyn,Eastern Parkway,1,1633
+2017,Brooklyn,Fort Greene,15,185050
+2017,Brooklyn,Gowanus,7,55458
+2017,Brooklyn,Greenpoint,22,340434
+2017,Brooklyn,Greenpoint Landing,1,9958
+2017,Brooklyn,Park Slope,31,354415
+2017,Brooklyn,Prospect Heights,18,50058
+2017,Brooklyn,Red Hook,13,39406
+2017,Brooklyn,Williamsburg,30,392796
+2017,Manhattan,Battery Park City,4,260831
+2017,Manhattan,Carnegie Hill,3,23218
+2017,Manhattan,Chelsea,20,1148244
+2017,Manhattan,Chinatown,5,173435
+2017,Manhattan,Civic Center,4,144667
+2017,Manhattan,Columbus Circle,2,150847
+2017,Manhattan,East Harlem,33,118313
+2017,Manhattan,East Village,20,821011
+2017,Manhattan,Financial District,15,376554
+2017,Manhattan,Flatiron District,3,180913
+2017,Manhattan,Garment District,5,239026
+2017,Manhattan,Gramercy,3,148907
+2017,Manhattan,Greenwich Village,11,482564
+2017,Manhattan,Harlem,13,29842
+2017,Manhattan,Hell's Kitchen,14,589687
+2017,Manhattan,Herald Square,1,70226
+2017,Manhattan,Hudson Square,4,150751
+2017,Manhattan,Hudson Yards,4,174392
+2017,Manhattan,Kips Bay,5,207124
+2017,Manhattan,Lenox Hill,10,191200
+2017,Manhattan,Lincoln Square,2,59292
+2017,Manhattan,Little Italy,5,293296
+2017,Manhattan,Lower East Side,17,516344
+2017,Manhattan,Manhattan Community Board 11,1,16449
+2017,Manhattan,Manhattan Valley,7,102922
+2017,Manhattan,Manhattanville,2,2603
+2017,Manhattan,Meatpacking District,1,48009
+2017,Manhattan,Midtown,4,182067
+2017,Manhattan,Midtown East,9,302758
+2017,Manhattan,Midtown South,5,232729
+2017,Manhattan,Morningside Heights,11,66666
+2017,Manhattan,Murray Hill,5,354759
+2017,Manhattan,NoHo,2,152014
+2017,Manhattan,Nolan Park,3,20651
+2017,Manhattan,NoMad,1,49082
+2017,Manhattan,Rose Hill,2,91143
+2017,Manhattan,SoHo,4,160380
+2017,Manhattan,Stuy Town,4,214300
+2017,Manhattan,Theater District,8,406183
+2017,Manhattan,Tribeca,12,344513
+2017,Manhattan,Tudor City,1,2094
+2017,Manhattan,Turtle Bay,7,169926
+2017,Manhattan,Two Bridges,5,78929
+2017,Manhattan,Union Square,3,204013
+2017,Manhattan,Upper East Side,18,347263
+2017,Manhattan,Upper West Side,29,701849
+2017,Manhattan,West Village,10,517311
+2017,Manhattan,Yorkville,15,263372
+2017,Queens,Astoria,30,27506
+2017,Queens,Long Island City,25,111066
+2017,Queens,Steinway,9,8304
+2017,Queens,Sunnyside,4,8500
+2017,Queens,Sunnyside Gardens,2,2189
+2017,Queens,Woodside,1,813
+2017,Queens,Fresh Pond Junction,0,0
+2017,Queens,Ridgewood,0,0
+2017,The Bronx,Bronx County,0,0
+2017,The Bronx,Claremont,0,0
+2017,The Bronx,Melrose,0,0
+2017,The Bronx,Mott Haven,0,0
+2017,The Bronx,Woodstock,0,0
+2018,Brooklyn,Bedford-Stuyvesant,25,163068
+2018,Brooklyn,Boerum Hill,5,70447
+2018,Brooklyn,Boerum Hill Historic District,2,22996
+2018,Brooklyn,Brooklyn Community District 17,1,4291
+2018,Brooklyn,Brooklyn Heights,7,144239
+2018,Brooklyn,Bushwick,7,52839
+2018,Brooklyn,Carroll Gardens,6,63887
+2018,Brooklyn,Clinton Hill,13,157456
+2018,Brooklyn,Cobble Hill,1,9120
+2018,Brooklyn,Cobble Hill Historic District,8,124868
+2018,Brooklyn,Columbia Street Waterfront District,4,47008
+2018,Brooklyn,Crown Heights,9,29826
+2018,Brooklyn,Downtown Brooklyn,9,185154
+2018,Brooklyn,DUMBO,7,142934
+2018,Brooklyn,Eastern Parkway,1,12952
+2018,Brooklyn,Fort Greene,15,207715
+2018,Brooklyn,Gowanus,7,67509
+2018,Brooklyn,Greenpoint,25,389986
+2018,Brooklyn,Greenpoint Landing,1,12078
+2018,Brooklyn,Park Slope,30,377581
+2018,Brooklyn,Prospect Heights,19,180823
+2018,Brooklyn,Red Hook,14,49880
+2018,Brooklyn,Williamsburg,31,464572
+2018,Manhattan,Alphabet City,2,41046
+2018,Manhattan,Battery Park City,4,247626
+2018,Manhattan,Carnegie Hill,3,23934
+2018,Manhattan,Chelsea,20,1085237
+2018,Manhattan,Chinatown,5,180887
+2018,Manhattan,Civic Center,4,144289
+2018,Manhattan,Columbus Circle,2,164020
+2018,Manhattan,East Harlem,34,228871
+2018,Manhattan,East Village,20,919286
+2018,Manhattan,Financial District,14,373051
+2018,Manhattan,Flatiron District,3,236056
+2018,Manhattan,Garment District,5,257371
+2018,Manhattan,Gramercy,3,133234
+2018,Manhattan,Greenwich Village,11,449249
+2018,Manhattan,Harlem,16,163630
+2018,Manhattan,Hell's Kitchen,15,609283
+2018,Manhattan,Herald Square,1,75292
+2018,Manhattan,Hudson Square,3,147052
+2018,Manhattan,Hudson Yards,5,192341
+2018,Manhattan,Kips Bay,6,237535
+2018,Manhattan,Lenox Hill,10,196715
+2018,Manhattan,Lincoln Square,2,62264
+2018,Manhattan,Little Italy,5,293408
+2018,Manhattan,Lower East Side,17,540128
+2018,Manhattan,Manhattan Community Board 11,1,20672
+2018,Manhattan,Manhattan Valley,7,94087
+2018,Manhattan,Manhattanville,2,16790
+2018,Manhattan,Meatpacking District,1,59859
+2018,Manhattan,Midtown,4,198185
+2018,Manhattan,Midtown East,9,317672
+2018,Manhattan,Midtown South,5,235910
+2018,Manhattan,Morningside Heights,11,124040
+2018,Manhattan,Murray Hill,5,344359
+2018,Manhattan,NoHo,2,158754
+2018,Manhattan,Nolan Park,3,21808
+2018,Manhattan,NoMad,1,39492
+2018,Manhattan,Rose Hill,2,87496
+2018,Manhattan,SoHo,3,131227
+2018,Manhattan,Stuy Town,4,223112
+2018,Manhattan,Theater District,8,400011
+2018,Manhattan,Tribeca,13,361903
+2018,Manhattan,Turtle Bay,7,177782
+2018,Manhattan,Two Bridges,5,89313
+2018,Manhattan,Union Square,3,203606
+2018,Manhattan,Upper East Side,19,360953
+2018,Manhattan,Upper West Side,30,823181
+2018,Manhattan,West Village,11,498340
+2018,Manhattan,Yorkville,16,289837
+2018,Queens,Astoria,32,152487
+2018,Queens,Long Island City,27,184510
+2018,Queens,Steinway,10,55952
+2018,Queens,Sunnyside,5,14212
+2018,Queens,Sunnyside Gardens,2,13731
+2018,Queens,Woodside,1,3749
+2018,Queens,Fresh Pond Junction,0,0
+2018,Queens,Ridgewood,0,0
+2018,The Bronx,Bronx County,0,0
+2018,The Bronx,Claremont,0,0
+2018,The Bronx,Melrose,0,0
+2018,The Bronx,Mott Haven,0,0
+2018,The Bronx,Woodstock,0,0
+2019,Brooklyn,Bedford-Stuyvesant,26,198021
+2019,Brooklyn,Boerum Hill,6,83462
+2019,Brooklyn,Boerum Hill Historic District,2,22178
+2019,Brooklyn,Broadway Junction,3,116
+2019,Brooklyn,Brooklyn Community District 17,1,5483
+2019,Brooklyn,Brooklyn Heights,10,175411
+2019,Brooklyn,Bushwick,79,162327
+2019,Brooklyn,Carroll Gardens,6,68944
+2019,Brooklyn,Clinton Hill,14,180731
+2019,Brooklyn,Cobble Hill,1,9878
+2019,Brooklyn,Cobble Hill Historic District,8,131375
+2019,Brooklyn,Columbia Street Waterfront District,4,50817
+2019,Brooklyn,Crown Heights,10,41441
+2019,Brooklyn,Downtown Brooklyn,10,222403
+2019,Brooklyn,DUMBO,8,178014
+2019,Brooklyn,Eastern Parkway,1,17654
+2019,Brooklyn,Fort Greene,16,234191
+2019,Brooklyn,Gowanus,7,70067
+2019,Brooklyn,Greenpoint,32,506166
+2019,Brooklyn,Greenpoint Landing,1,15428
+2019,Brooklyn,Ocean Hill,2,135
+2019,Brooklyn,Park Slope,32,434571
+2019,Brooklyn,Prospect Heights,20,229059
+2019,Brooklyn,Red Hook,14,59313
+2019,Brooklyn,Ridgewood,3,693
+2019,Brooklyn,Williamsburg,34,575687
+2019,Manhattan,Alphabet City,2,103814
+2019,Manhattan,Battery Park City,4,270609
+2019,Manhattan,Carnegie Hill,3,30886
+2019,Manhattan,Chelsea,23,1392597
+2019,Manhattan,Chinatown,5,205799
+2019,Manhattan,Civic Center,4,136559
+2019,Manhattan,Columbus Circle,2,178754
+2019,Manhattan,East Harlem,34,316879
+2019,Manhattan,East Village,21,1126872
+2019,Manhattan,Financial District,15,451242
+2019,Manhattan,Flatiron District,3,265609
+2019,Manhattan,Garment District,5,316474
+2019,Manhattan,Gramercy,3,165253
+2019,Manhattan,Greenwich Village,11,541140
+2019,Manhattan,Harlem,16,216672
+2019,Manhattan,Hell's Kitchen,15,705591
+2019,Manhattan,Herald Square,2,95926
+2019,Manhattan,Hudson Square,4,221059
+2019,Manhattan,Hudson Yards,4,247217
+2019,Manhattan,Kips Bay,7,374273
+2019,Manhattan,Lenox Hill,12,255308
+2019,Manhattan,Lincoln Square,2,67738
+2019,Manhattan,Little Italy,5,327520
+2019,Manhattan,Lower East Side,18,677866
+2019,Manhattan,Manhattan Community Board 11,1,24915
+2019,Manhattan,Manhattan Valley,7,115358
+2019,Manhattan,Manhattanville,3,22610
+2019,Manhattan,Meatpacking District,1,70408
+2019,Manhattan,Midtown,6,269413
+2019,Manhattan,Midtown East,14,451077
+2019,Manhattan,Midtown South,6,295605
+2019,Manhattan,Morningside Heights,11,133073
+2019,Manhattan,Murray Hill,6,420375
+2019,Manhattan,NoHo,2,170332
+2019,Manhattan,Nolan Park,3,32936
+2019,Manhattan,NoMad,1,59094
+2019,Manhattan,Rose Hill,2,89679
+2019,Manhattan,SoHo,5,130787
+2019,Manhattan,Stuy Town,6,291844
+2019,Manhattan,Theater District,9,480230
+2019,Manhattan,Tribeca,13,445859
+2019,Manhattan,Tudor City,1,22865
+2019,Manhattan,Turtle Bay,8,201098
+2019,Manhattan,Two Bridges,5,106445
+2019,Manhattan,Union Square,3,232022
+2019,Manhattan,Upper East Side,19,434439
+2019,Manhattan,Upper West Side,31,890544
+2019,Manhattan,West Village,12,648041
+2019,Manhattan,Yorkville,16,321853
+2019,Queens,Astoria,33,193564
+2019,Queens,Fresh Pond Junction,2,483
+2019,Queens,Long Island City,30,240539
+2019,Queens,Ridgewood,18,825
+2019,Queens,Steinway,10,67914
+2019,Queens,Sunnyside,5,18824
+2019,Queens,Sunnyside Gardens,2,18241
+2019,Queens,Woodside,1,4487
+2019,Queens,Fresh Pond Junction,0,0
+2019,Queens,Ridgewood,0,0
+2019,The Bronx,Bronx County,0,0
+2019,The Bronx,Claremont,0,0
+2019,The Bronx,Melrose,0,0
+2019,The Bronx,Mott Haven,0,0
+2019,The Bronx,Woodstock,0,0
+2020,Brooklyn,Bedford-Stuyvesant,26,251805
+2020,Brooklyn,Boerum Hill,6,82061
+2020,Brooklyn,Boerum Hill Historic District,2,20704
+2020,Brooklyn,Broadway Junction,3,7127
+2020,Brooklyn,Brooklyn Community District 17,1,11470
+2020,Brooklyn,Brooklyn Heights,10,157001
+2020,Brooklyn,Bushwick,79,405402
+2020,Brooklyn,Carroll Gardens,6,46839
+2020,Brooklyn,Clinton Hill,14,168816
+2020,Brooklyn,Cobble Hill,1,7499
+2020,Brooklyn,Cobble Hill Historic District,8,103111
+2020,Brooklyn,Columbia Street Waterfront District,4,57110
+2020,Brooklyn,Crown Heights,11,70446
+2020,Brooklyn,Downtown Brooklyn,11,192505
+2020,Brooklyn,DUMBO,8,170131
+2020,Brooklyn,Eastern Parkway,1,17203
+2020,Brooklyn,Fort Greene,17,224356
+2020,Brooklyn,Gowanus,8,54363
+2020,Brooklyn,Greenpoint,32,489293
+2020,Brooklyn,Greenpoint Landing,1,20156
+2020,Brooklyn,Greenwood Heights,1,9000
+2020,Brooklyn,Ocean Hill,2,8186
+2020,Brooklyn,Park Slope,32,431459
+2020,Brooklyn,Prospect Heights,20,258754
+2020,Brooklyn,Red Hook,14,58444
+2020,Brooklyn,Ridgewood,3,8506
+2020,Brooklyn,Sunset Park,1,6586
+2020,Brooklyn,Williamsburg,34,606267
+2020,Manhattan,Alphabet City,2,81383
+2020,Manhattan,Battery Park City,5,305649
+2020,Manhattan,Carnegie Hill,3,41448
+2020,Manhattan,Chelsea,24,1107219
+2020,Manhattan,Chinatown,5,171409
+2020,Manhattan,Civic Center,4,102547
+2020,Manhattan,Columbus Circle,2,161929
+2020,Manhattan,East Harlem,41,423817
+2020,Manhattan,East Village,22,964080
+2020,Manhattan,Financial District,18,435203
+2020,Manhattan,Flatiron District,3,193653
+2020,Manhattan,Fort George,1,1668
+2020,Manhattan,Garment District,6,217667
+2020,Manhattan,Gramercy,3,136342
+2020,Manhattan,Greenwich Village,11,425045
+2020,Manhattan,Hamilton Heights,9,37720
+2020,Manhattan,Harlem,38,401483
+2020,Manhattan,Hell's Kitchen,15,668442
+2020,Manhattan,Herald Square,2,122899
+2020,Manhattan,Hudson Heights,4,11915
+2020,Manhattan,Hudson Square,4,183586
+2020,Manhattan,Hudson Yards,6,258765
+2020,Manhattan,Kips Bay,7,371008
+2020,Manhattan,Lenox Hill,12,357437
+2020,Manhattan,Lincoln Square,2,53594
+2020,Manhattan,Little Italy,5,266882
+2020,Manhattan,Lower East Side,19,626306
+2020,Manhattan,Manhattan Community Board 11,1,29162
+2020,Manhattan,Manhattan Community Board 8,3,30672
+2020,Manhattan,Manhattan Valley,7,149800
+2020,Manhattan,Manhattanville,8,69506
+2020,Manhattan,Meatpacking District,1,44063
+2020,Manhattan,Midtown,8,277264
+2020,Manhattan,Midtown East,15,392701
+2020,Manhattan,Midtown South,6,211041
+2020,Manhattan,Morningside Heights,11,162224
+2020,Manhattan,Murray Hill,8,312623
+2020,Manhattan,NoHo,2,103041
+2020,Manhattan,Nolan Park,3,22674
+2020,Manhattan,NoMad,2,56276
+2020,Manhattan,Rose Hill,2,64179
+2020,Manhattan,SoHo,5,161601
+2020,Manhattan,Stuy Town,6,224231
+2020,Manhattan,Sugar Hill,8,19262
+2020,Manhattan,Theater District,9,330751
+2020,Manhattan,Tribeca,14,312936
+2020,Manhattan,Tudor City,1,25063
+2020,Manhattan,Turtle Bay,8,189579
+2020,Manhattan,Two Bridges,5,101846
+2020,Manhattan,Union Square,3,159335
+2020,Manhattan,Upper East Side,19,464147
+2020,Manhattan,Upper West Side,37,1081542
+2020,Manhattan,Washington Heights,22,57072
+2020,Manhattan,Washington Square Village,1,34004
+2020,Manhattan,West Village,12,584100
+2020,Manhattan,Yorkville,16,456990
+2020,Queens,Astoria,33,271307
+2020,Queens,Fresh Pond Junction,2,7595
+2020,Queens,Long Island City,30,298510
+2020,Queens,Ridgewood,18,44063
+2020,Queens,Steinway,10,94103
+2020,Queens,Sunnyside,5,23897
+2020,Queens,Sunnyside Gardens,2,19455
+2020,Queens,Woodside,1,8426
+2020,The Bronx,Bronx County,109,123251
+2020,The Bronx,Claremont,1,912
+2020,The Bronx,Melrose,1,1739
+2020,The Bronx,Mott Haven,2,2096
+2020,The Bronx,Woodstock,1,602
+2021,Brooklyn,Bedford-Stuyvesant,26,348311
+2021,Brooklyn,Boerum Hill,6,114509
+2021,Brooklyn,Boerum Hill Historic District,2,29028
+2021,Brooklyn,Broadway Junction,3,8938
+2021,Brooklyn,Brooklyn Community District 17,1,11484
+2021,Brooklyn,Brooklyn Heights,10,213469
+2021,Brooklyn,Bushwick,79,601623
+2021,Brooklyn,Carroll Gardens,6,74283
+2021,Brooklyn,Clinton Hill,14,258236
+2021,Brooklyn,Cobble Hill,1,9812
+2021,Brooklyn,Cobble Hill Historic District,8,131520
+2021,Brooklyn,Columbia Street Waterfront District,4,62741
+2021,Brooklyn,Crown Heights,11,112006
+2021,Brooklyn,Downtown Brooklyn,10,223264
+2021,Brooklyn,DUMBO,8,175735
+2021,Brooklyn,Eastern Parkway,1,25710
+2021,Brooklyn,Fort Greene,17,302302
+2021,Brooklyn,Gowanus,8,77795
+2021,Brooklyn,Greenpoint,32,679541
+2021,Brooklyn,Greenpoint Landing,1,29192
+2021,Brooklyn,Greenwood Heights,1,4327
+2021,Brooklyn,Ocean Hill,2,10876
+2021,Brooklyn,Park Slope,32,578743
+2021,Brooklyn,Prospect Heights,19,339768
+2021,Brooklyn,Red Hook,14,66489
+2021,Brooklyn,Ridgewood,3,11825
+2021,Brooklyn,Sunset Park,1,2071
+2021,Brooklyn,Williamsburg,34,818066
+2021,Manhattan,Alphabet City,2,104866
+2021,Manhattan,Battery Park City,5,370375
+2021,Manhattan,Carnegie Hill,3,57081
+2021,Manhattan,Chelsea,23,1402756
+2021,Manhattan,Chinatown,5,213209
+2021,Manhattan,Civic Center,4,140765
+2021,Manhattan,Columbus Circle,2,123146
+2021,Manhattan,East Harlem,41,510963
+2021,Manhattan,East Village,22,1141365
+2021,Manhattan,Financial District,18,472455
+2021,Manhattan,Flatiron District,3,176120
+2021,Manhattan,Fort George,1,2868
+2021,Manhattan,Garment District,6,307510
+2021,Manhattan,Gramercy,3,165653
+2021,Manhattan,Greenwich Village,10,533646
+2021,Manhattan,Hamilton Heights,9,55003
+2021,Manhattan,Harlem,38,542237
+2021,Manhattan,Hell's Kitchen,15,810061
+2021,Manhattan,Herald Square,2,173567
+2021,Manhattan,Hudson Heights,4,24756
+2021,Manhattan,Hudson Square,4,210185
+2021,Manhattan,Hudson Yards,6,363540
+2021,Manhattan,Kips Bay,7,434160
+2021,Manhattan,Lenox Hill,12,443503
+2021,Manhattan,Lincoln Square,2,99066
+2021,Manhattan,Little Italy,5,355202
+2021,Manhattan,Lower East Side,19,828726
+2021,Manhattan,Manhattan Community Board 11,1,33933
+2021,Manhattan,Manhattan Community Board 8,3,48284
+2021,Manhattan,Manhattan Valley,7,193134
+2021,Manhattan,Manhattanville,8,69077
+2021,Manhattan,Meatpacking District,1,60284
+2021,Manhattan,Midtown,8,374142
+2021,Manhattan,Midtown East,15,448164
+2021,Manhattan,Midtown South,6,255105
+2021,Manhattan,Morningside Heights,11,212991
+2021,Manhattan,Murray Hill,7,360360
+2021,Manhattan,NoHo,2,137899
+2021,Manhattan,Nolan Park,3,33876
+2021,Manhattan,NoMad,2,97200
+2021,Manhattan,Rose Hill,2,78985
+2021,Manhattan,SoHo,5,204542
+2021,Manhattan,Stuy Town,6,279926
+2021,Manhattan,Sugar Hill,8,38484
+2021,Manhattan,Theater District,8,372184
+2021,Manhattan,Tribeca,14,427217
+2021,Manhattan,Tudor City,1,18460
+2021,Manhattan,Turtle Bay,8,245534
+2021,Manhattan,Two Bridges,5,109774
+2021,Manhattan,Union Square,3,220618
+2021,Manhattan,Upper East Side,18,468179
+2021,Manhattan,Upper West Side,37,1402027
+2021,Manhattan,Washington Heights,22,92750
+2021,Manhattan,Washington Square Village,1,51007
+2021,Manhattan,West Village,12,671344
+2021,Manhattan,Yorkville,16,553623
+2021,Queens,Astoria,32,313615
+2021,Queens,Fresh Pond Junction,2,8027
+2021,Queens,Long Island City,30,355755
+2021,Queens,Ridgewood,18,62995
+2021,Queens,Steinway,10,81672
+2021,Queens,Sunnyside,5,22017
+2021,Queens,Sunnyside Gardens,2,19098
+2021,Queens,Woodside,1,4345
+2021,The Bronx,Bronx County,107,278042
+2021,The Bronx,Claremont,1,2732
+2021,The Bronx,Melrose,1,3011
+2021,The Bronx,Mott Haven,2,4623
+2021,The Bronx,Woodstock,1,2077

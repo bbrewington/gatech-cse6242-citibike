@@ -14,5 +14,5 @@ fig = px.scatter(citi_scatter, x="station_count", y="ride_count", animation_fram
            color_discrete_map = {'Queens': 'orange', 'The Bronx': 'green', 'Brooklyn': 'red', 'Manhattan': 'blue'},
            title = 'Count of Stations and Total Rides By Neighborhood, Year Over Year')
 
-with open('stations_and_total_rides_scatterplot.html', 'w') as f:
+with open('../../docs/_includes/stations_and_total_rides_scatterplot.html', 'w') as f:
     f.write(pio.to_html(fig, include_plotlyjs='cdn'))

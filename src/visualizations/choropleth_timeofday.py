@@ -34,5 +34,5 @@ fig.update_layout({'updatemenus':[{'type': 'dropdown', 'showactive': True, 'acti
 
 # fig.show()
 
-with open('choropleth_timeofday.html', 'w') as f:
+with open('../../docs/_includes/choropleth_timeofday.html', 'w') as f:
     f.write(pio.to_html(fig, include_plotlyjs='cdn'))

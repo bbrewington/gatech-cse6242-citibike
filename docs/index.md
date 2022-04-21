@@ -4,11 +4,13 @@
 
 {% include stations_and_total_rides_scatterplot.html %}
 
-### Map: By Year
+### Choropleth Map: Ridership By Zip Code Per Year
 
 {% include choropleth_by_year.html %}
 
-### Map: By Time of Day
+### Choropleth Map: Ridership Trends By Zip Code Throughout The Day
+
+This choropleth map only considers 2021 ridership data
 
 {% include choropleth_timeofday.html %}
 

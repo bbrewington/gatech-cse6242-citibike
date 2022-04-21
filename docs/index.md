@@ -15,8 +15,8 @@ This choropleth map only considers 2021 ridership data
 ### Membership Signups
 
 {% include citibike_membership_signups.html %}
-
-### Weather Factors
+<br>
+### Impact of Weather Factors on Ridership
 
 Use the drop-down options to explore how ridership is impacted by different factors
 

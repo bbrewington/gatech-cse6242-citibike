@@ -1,6 +1,6 @@
 import pandas as pd
 import plotly.graph_objects as go
-import plotly.io as pio
+from plotly import io as pio
 
 df = pd.read_csv("weather_trips_per_day.csv")
 #print(df.head())
@@ -39,12 +39,14 @@ df_r.reset_index(inplace=True)
 
 fig=go.Figure()
 
-fig.add_traces(go.Bar(x=df_t["Temperature_Avg"], y= df_t["num_trips_per_day"], name='Temperature', visible=True, marker={'color':df_t["Temperature_Avg"]}))
+fig.add_traces(go.Bar(x=df_t["Temperature_Avg"], y= df_t["num_trips_per_day"], name='Temperature', visible=True,
+                      hovertemplate = "Avg_Temp: %{x} <br>Trips: %{y}", marker={'color':df_t["Temperature_Avg"]}))
 fig.update_layout(title="Number of Trips impacted by Temperature",xaxis_title="Average Temperature",yaxis_title="Average Number of Trips")
 dropdown_buttons =[{'label': 'Temperature', 
                     'method' : 'update', 
                     'args': [{'x' :[df_t["Temperature_Avg"]], 'y': [df_t["num_trips_per_day"]],
                              'name': 'Temperature',
+                             'hovertemplate': "Avg_Temp: %{x} <br>Trips: %{y}",
                              'visible': True},
                              {'title': 'Number of Trips impacted by Temperature', 
                               'xaxis': {'title': 'Average Temperature'},
@@ -54,6 +56,7 @@ dropdown_buttons =[{'label': 'Temperature',
                     'method' : 'update', 
                     'args': [{'x' :[df_d["Dew_Avg"]], 'y': [df_d["num_trips_per_day"]],
                              'name':'Dew',
+                              'hovertemplate': "Avg_Dew: %{x} <br>Trips: %{y}",
                              'visible': True}, 
                              {'title': 'Number of Trips impacted by Dew',
                               'xaxis': {'title': 'Average Dew'},
@@ -63,6 +66,7 @@ dropdown_buttons =[{'label': 'Temperature',
                     'method' : 'update', 
                     'args': [{'x' :[df_h["Humidity_Avg"]], 'y': [df_h["num_trips_per_day"]],
                              'name':'Humidity',
+                              'hovertemplate': "Avg_Humidity: %{x} <br>Trips: %{y}",
                              'visible': True}, 
                              {'title': 'Number of Trips impacted by Humidity', 
                               'xaxis': {'title': 'Average Humidity'},
@@ -72,6 +76,7 @@ dropdown_buttons =[{'label': 'Temperature',
                     'method' : 'update', 
                     'args': [{'x' :[df_w["Wind Speed_Avg"]], 'y': [df_w["num_trips_per_day"]],
                              'name':'Wind Speed',
+                              'hovertemplate': "Avg_Wind_Speed: %{x} <br>Trips: %{y}",
                              'visible': True}, 
                              {'title': 'Number of Trips impacted by Wind Speed', 
                               'xaxis': {'title': 'Average Wind Speed'},
@@ -81,6 +86,7 @@ dropdown_buttons =[{'label': 'Temperature',
                     'method' : 'update', 
                     'args': [{'x' :[df_p["Pressure_Avg"]], 'y': [df_p["num_trips_per_day"]],
                              'name':'Pressure',
+                              'hovertemplate': "Avg_Pressure: %{x} <br>Trips: %{y}",
                              'visible': True}, 
                              {'title': 'Number of Trips impacted by Pressure', 
                               'xaxis': {'title': 'Average Pressure'},
@@ -90,12 +96,14 @@ dropdown_buttons =[{'label': 'Temperature',
                     'method' : 'update', 
                     'args': [{'x' :[df_r["Precipitation_Avg"]], 'y': [df_r["num_trips_per_day"]],
                              'name':'Precipitation',
+                              'hovertemplate': "Avg_Precipitation: %{x} <br>Trips: %{y}",
                              'visible': True}, 
                              {'title': 'Number of Trips impacted by Precipitation', 
                               'xaxis': {'title': 'Average Precipitation'},
                               'yaxis': {'title': 'Average Number of Trips'}}
                             ]},
                     ]
+
 
 fig.update_layout({'updatemenus':[{'type': 'dropdown', 'showactive': True, 'active': 0, 'buttons': dropdown_buttons}]})
 

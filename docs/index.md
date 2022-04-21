@@ -15,3 +15,7 @@ This choropleth map only considers 2021 ridership data
 ### Membership Signups
 
 {% include citibike_membership_signups.html %}
+
+### Weather Factors
+
+{% include weather_factors_impact.html %}

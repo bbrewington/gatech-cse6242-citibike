@@ -1,2 +1,2 @@
-remote_theme: bbrewington/cayman
-header_logo_url: https://cdn.lyft.com/static/bikesharefe/logo/CitiBike.svg
+theme: jekyll-theme-minimal
+logo: https://cdn.lyft.com/static/bikesharefe/logo/CitiBike.svg

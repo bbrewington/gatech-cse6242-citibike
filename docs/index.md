@@ -18,4 +18,6 @@ This choropleth map only considers 2021 ridership data
 
 ### Weather Factors
 
+Use the drop-down options to explore how ridership is impacted by different factors
+
 {% include weather_factors_impact.html %}

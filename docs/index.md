@@ -1,5 +1,3 @@
-# Citibike Analysis
-
 ### Stations and Total Rides
 
 {% include stations_and_total_rides_scatterplot.html %}

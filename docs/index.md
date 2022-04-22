@@ -1,8 +1,8 @@
 ## Introduction
 
-Citi Bike (https://citibikenyc.com/) is a bike sharing service in NY with over 24,500 bikes and 1,500 bike stations
+<a href="https://citibikenyc.com/">Citi Bike</a> is a bike sharing service in New York City with over 24,500 bikes and 1,500 bike stations
 
-The goal of this project is to provide holistic insights and visualizations for Citi Bike trends and factors impacting ridership behavior to inform city and transit planning
+The goal of this project is to provide holistic insights and visualizations for Citi Bike trends and factors impacting ridership behavior to inform city planning and transit planning
 
 ## Stations and Total Rides
 

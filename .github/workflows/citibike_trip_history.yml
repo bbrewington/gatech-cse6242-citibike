@@ -91,9 +91,13 @@ jobs:
         DBT_BIGQUERY_TOKEN: ${{ secrets.GCP_CREDENTIALS }}
   
     - name: dbt docs generate
+      id: dbt-docs-generate
       uses: mwhitaker/dbt-action@master
       with:
         dbt_command: "dbt docs generate --profiles-dir . --target prod"
         dbt_project_folder: "citibike_dbt"
       env:
         DBT_BIGQUERY_TOKEN: ${{ secrets.GCP_CREDENTIALS }}
+    - name: Get the result
+      run: echo "${{ steps.dbt-docs-generate.outputs.result }}"
+      shell: bash

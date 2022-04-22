@@ -42,6 +42,14 @@ The approach with BigQuery data in this project is "ELT", or "Extract, Load, Tra
   - [src/dbt_utility.py](src/dbt_utility.py): Python code to be run manually as described below in appendix
   - [src/gcs_to_gbq.py](src/gcs_to_gbq.py): Python code to load staged GCS data into BigQuery staging dataset (which is referenced by dbt)
 
+### Instructions for Github Actions
+Add these credentials to {repo_url}/settings/secrets/actions:
+* AWS API Credentials
+  - `AWS_ACCESS_KEY`
+  - `AWS_SECRET_ACCESS_KEY`
+* Google Cloud service account JSON key
+  - `GCP_CREDENTIALS`
+
 ### Appendix: How to update dbt docs (via command line)
 1. cd into `/citibike_dbt`
 2. update & test dbt model, and update docs:

@@ -26,6 +26,22 @@ The approach with BigQuery data in this project is "ELT", or "Extract, Load, Tra
   - Once raw data staged in BigQuery, the tool "dbt" in folder [/citibike_dbt](/citibike_dbt) orchestrates a sequence of queries going from raw data to intermediate tables, and outputting final clean tables at defined granularities.  There are also some data cleaning rules and assumptions built in via tests in this step.
   - dbt project documentation is published here: https://bbrewington.github.io/gatech-cse6242-citibike/dbt_docs.html
 
+### /src folder
+* Weather Analysis Notebooks
+  - [src/WeatherAnalysis_LinearRegression_R_Final.ipynb](src/WeatherAnalysis_LinearRegression_R_Final.ipynb): Analysis document walking through steps to predict weather impact on ridership via Linear Regression
+  - [src/WeatherAnalysis_RandomForest_Python_Final.ipynb](src/WeatherAnalysis_RandomForest_Python_Final.ipynb): Analysis document walking through steps to predict weather impact on ridership via Random Forest
+
+* Analysis files used in website
+  - [src/visualizations/choropleth_by_year.py](src/visualizations/choropleth_by_year.py): creates map of ridership by zip by year (year drop-down selection)
+  - [src/visualizations/choropleth_timeofday.py](src/visualizations/choropleth_timeofday.py): creates map of ridership by zip by time of day (time of day drop-down selection)
+  - [src/visualizations/stations_and_total_rides_scatterplot.py](src/visualizations/stations_and_total_rides_scatterplot.py): creates animated scatterplot showing rides by neighborhood by year
+  - [src/visualizations/weather_factors_impact.py](src/visualizations/weather_factors_impact.py): creates bar plots exploring how weather factors impact ridership (weather factor selection via drop-down)
+
+* Other Python files
+  - [src/copy_aws_to_gcs.py](src/copy_aws_to_gcs.py): This is the script that orchestrates getting the data from AWS and staging in GCS
+  - [src/dbt_utility.py](src/dbt_utility.py): Python code to be run manually as described below in appendix
+  - [src/gcs_to_gbq.py](src/gcs_to_gbq.py): Python code to load staged GCS data into BigQuery staging dataset (which is referenced by dbt)
+
 ### Appendix: How to update dbt docs (via command line)
 1. cd into `/citibike_dbt`
 2. update & test dbt model, and update docs:

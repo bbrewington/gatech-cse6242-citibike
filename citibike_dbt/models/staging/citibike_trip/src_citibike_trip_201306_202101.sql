@@ -1,23 +1,19 @@
 with source as (
-    select
-        -- Date/Time, Station Info, Lat/Lon
-          datetime(starttime) as started_at
-        , datetime(stoptime) as ended_at
-        , cast(start_station_id as string) as start_station_id
-        , cast(start_station_name as string) as start_station_name
-        , cast(start_station_latitude as float64) as start_lat
-        , cast(start_station_longitude as float64) as start_lng
-        , cast(end_station_id as string) as end_station_id
-        , cast(end_station_name as string) as end_station_name
-        , cast(end_station_latitude as float64) as end_lat
-        , cast(end_station_longitude as float64) as end_lng
-
-        -- Other Attributes
-        , datetime_diff(datetime(stoptime), datetime(starttime), minute) as trip_duration_mins
-        , cast(bikeid as int64) as bike_id
-        , cast(usertype as string) as user_type -- values: Subscriber, Consumer
-        , safe_cast(birth_year as int64) as birth_year -- 4 digit year
-        , cast(gender as string) as gender -- values: 0, 1, 2
+    select * except(starttime, stoptime)
+        , case
+            when regexp_contains(starttime, r'\d{1,2}/\d{1,2}/\d{4} \d{2}:\d{2}:\d{2}')
+                then parse_datetime('%m/%d/%Y %H:%M:%S', starttime)
+            when regexp_contains(starttime, r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}')
+                then parse_datetime('%Y-%m-%d %H:%M:%S', split(starttime, '.')[safe_offset(0)])
+            else null
+        end as starttime
+        , case
+            when regexp_contains(stoptime, r'\d{1,2}/\d{1,2}/\d{4} \d{2}:\d{2}:\d{2}')
+                then parse_datetime('%m/%d/%Y %H:%M:%S', stoptime)
+            when regexp_contains(stoptime, r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}')
+                then parse_datetime('%Y-%m-%d %H:%M:%S', split(stoptime, '.')[safe_offset(0)])
+            else null
+        end as stoptime
     from (
         -- was getting error w/ wildcard pattern / _TABLE_SUFFIX filter
         -- hence the monstrocity that follows :)
@@ -125,4 +121,23 @@ with source as (
     )
 )
 
-select * from source
+select 
+    -- Date/Time, Station Info, Lat/Lon
+      starttime as started_at
+    , stoptime as ended_at
+    , cast(start_station_id as string) as start_station_id
+    , cast(start_station_name as string) as start_station_name
+    , cast(start_station_latitude as float64) as start_lat
+    , cast(start_station_longitude as float64) as start_lng
+    , cast(end_station_id as string) as end_station_id
+    , cast(end_station_name as string) as end_station_name
+    , cast(end_station_latitude as float64) as end_lat
+    , cast(end_station_longitude as float64) as end_lng
+
+    -- Other Attributes
+    , datetime_diff(stoptime, starttime, minute) as trip_duration_mins
+    , cast(bikeid as int64) as bike_id
+    , cast(usertype as string) as user_type -- values: Subscriber, Consumer
+    , safe_cast(birth_year as int64) as birth_year -- 4 digit year
+    , cast(gender as string) as gender -- values: 0, 1, 2
+from source

@@ -16,7 +16,7 @@ with source as (
         , datetime_diff(datetime(stoptime), datetime(starttime), minute) as trip_duration_mins
         , cast(bikeid as int64) as bike_id
         , cast(usertype as string) as user_type -- values: Subscriber, Consumer
-        , cast(birth_year as int64) as birth_year -- 4 digit year
+        , safe_cast(birth_year as int64) as birth_year -- 4 digit year
         , cast(gender as string) as gender -- values: 0, 1, 2
     from (
         -- was getting error w/ wildcard pattern / _TABLE_SUFFIX filter

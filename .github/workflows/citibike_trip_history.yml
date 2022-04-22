@@ -60,6 +60,12 @@ jobs:
     - name: Install python libraries
       run: pip install --upgrade dbt-bigquery
 
+    - name: dbt install deps
+      uses: mwhitaker/dbt-action@master
+      with:
+        dbt_command: "dbt deps"
+        dbt_project_folder: "citibike_dbt"
+
     - name: dbt run (target dev)
       uses: mwhitaker/dbt-action@master  
       with:

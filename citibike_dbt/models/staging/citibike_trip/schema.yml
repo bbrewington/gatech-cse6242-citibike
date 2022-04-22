@@ -12,6 +12,9 @@ models:
         description: "station id ride started at"
       - name: start_station_name
         description: "station name ride started at"
+        tests:
+          - dbt_utils.not_null_proportion:
+              at_least: 0.99
       - name: start_lat
         description: "latitude ride started at"
       - name: start_lng
@@ -20,6 +23,9 @@ models:
         description: "station id ride ended at"
       - name: end_station_name
         description: "station name ride ended at"
+        tests:
+          - dbt_utils.not_null_proportion:
+              at_least: 0.99
       - name: end_lat
         description: "latitude ride ended at"
       - name: end_lng

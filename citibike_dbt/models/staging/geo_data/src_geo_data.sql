@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('geo', 'geo_data') }}

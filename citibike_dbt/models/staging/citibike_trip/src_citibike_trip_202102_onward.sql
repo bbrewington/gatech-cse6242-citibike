@@ -18,7 +18,7 @@ with source as (
         , cast(member_casual as string) as member_casual -- values: member, casual
         , cast(ride_id as string) as ride_id
     from `cse-6242-sp22-nyatl.CITIBIKE_STG.citibike_trip_*`
-    where _TABLE_SUFFIX >= '20210201'
+    where _TABLE_SUFFIX >= concat('202102', '01') -- using concat to make it clearer that this means Feb 2021
 )
 
 select * from source

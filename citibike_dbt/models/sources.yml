@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: weather
+    project: cse-6242-sp22-nyatl
+    dataset: WEATHER
+    tables:
+      - name: weather_data
+
+  - name: geo
+    project: cse-6242-sp22-nyatl
+    dataset: GEO
+    tables:
+      - name: geo_data

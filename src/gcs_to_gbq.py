@@ -13,7 +13,7 @@ def gcs_list_blobs(project_id, gcs_bucket, file_regex):
     
     for blob in blobs:
         if bool(re.search(file_regex, blob.name)) and not bool(re.search('/', blob.name)):
-            blob_list.append(blob)
+            blob_list.append(blob.name)
     
     return blob_list
 

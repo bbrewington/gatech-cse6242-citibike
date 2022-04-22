@@ -1,14 +1,32 @@
 # gatech-cse6242-citibike
 
-### Get Bike Data
-1. Run python code `create_bike_data_script.py` which creates bash script `get_bike_data.sh`
-2. Run bash script in Google Cloud terminal (probably need to make this more configurable so it doesn't do every single file):
-  ```
-  sh get_bike_data.sh
-  ```
+### What it is
+Team project for Georgia Tech Masters in Analytics, Spring 2022 - CSE 6242: Data & Visual Analytics
 
-### dbt project notes
-Folder [citibike_dbt](citibike_dbt) contains a dbt project that builds a series of queries in sequence and runs tests on them.  Docs are published to github pages connected to this repo: https://bbrewington.github.io/gatech-cse6242-citibike/
+Citi Bike is a bike sharing service in New York City with over 24,500 bikes and 1,500 bike stations.  Project goal is to provide holistic insights and visualizations for Citi Bike trends and factors impacting ridership behavior to empower city and transit planning
+
+This github repository contains the code for data pipeline, visualization, and website generation
+
+Team Members:
+* Kevin Schneider
+* Roshni Mahtani
+* Stephanie Chueh
+* Brent Brewington
+
+### How it works
+The raw Citibike trip data is stored in AWS bucket [tripdata](https://s3.amazonaws.com/tripdata/index.html).  We also include neighborhood attributes and daily weather data, which were manually sourced and added to BigQuery.
+
+Automation occurs via GitHub Actions connected to this repo.  Details in file: [.github/workflows/citibike_trip_history.yml](.github/workflows/citibike_trip_history.yml), and Actions executions can be viewed here: https://github.com/bbrewington/gatech-cse6242-citibike/actions
+
+The approach with BigQuery data in this project is "ELT", or "Extract, Load, Transform":
+
+1. **Extract & Load**
+  - Weather Data: manually sourced from Weather Underground; loaded into BigQuery
+  - Neighborhood Attributes (a.k.a. "GEO"): manually sourced from raw Citibike Trip Data, cleaned, and aggregated to neighborhood; loaded into BigQuery
+  - Citibike Trip Data: raw data extracted from [AWS bucket tripdata](https://s3.amazonaws.com/tripdata/index.html) via [/src/copy_aws_to_gcs.py](/src/copy_aws_to_gcs.py) (executed in github action with command line arguments: [.github/workflows/citibike_trip_history.yml](.github/workflows/citibike_trip_history.yml)) - lands in staging dataset in BigQuery
+2. **Transform**
+  - Once raw data staged in BigQuery, the tool "dbt" in folder [/citibike_dbt](/citibike_dbt) orchestrates a sequence of queries going from raw data to intermediate tables, and outputting final clean tables at defined granularities.  There are also some data cleaning rules and assumptions built in via tests in this step.
+  - dbt project documentation is published here: https://github.com/bbrewington/gatech-cse6242-citibike/dbt_docs.html
 
 ### How to update dbt docs (via command line)
 1. cd into `/citibike_dbt`
@@ -27,6 +45,5 @@ Folder [citibike_dbt](citibike_dbt) contains a dbt project that builds a series 
     >>> from dbt_utiliity import generate_static_dbt_docs
     >>> generate_static_dbt_docs()
     >>> quit()
-    % cp target/index.html ../index.html
+    % cp target/index.html ../docs/dbt_docs.html
     ```
-4. Once above changes merged into the `main` branch (or if not main, the branch specified in [Settings/Pages](https://github.com/bbrewington/gatech-cse6242-citibike/settings/pages)), the dbt docs page will be updated

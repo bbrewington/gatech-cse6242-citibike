@@ -98,3 +98,14 @@ jobs:
         dbt_project_folder: "citibike_dbt"
       env:
         DBT_BIGQUERY_TOKEN: ${{ secrets.GCP_CREDENTIALS }}
+
+  build_github_pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: octokit/request-action@v2.x
+        id: build_github_pages
+        with:
+          route: POST /repos/${{ github.repository }}/pages/builds
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: "echo latest release: ${{ steps.build_github_pages.outputs.data }}"

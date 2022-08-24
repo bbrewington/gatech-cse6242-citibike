@@ -25,5 +25,6 @@ models:
       +persist_docs:
         columns: true
     marts:
+      +materialized: table
       +persist_docs:
         columns: true

@@ -12,6 +12,7 @@ models:
         tests:
           - not_null
       - name: station_name
+        description: NYC Citibike station name
         tests:
           - not_null
   - name: metrics_dt

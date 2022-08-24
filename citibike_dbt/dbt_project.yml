@@ -25,3 +25,5 @@ models:
       +persist_docs:
         columns: true
     marts:
+      +persist_docs:
+        columns: true

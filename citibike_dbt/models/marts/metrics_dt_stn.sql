@@ -6,22 +6,14 @@ select
   , geo.zipcode as station_zipcode
   , geo.latitude as station_lat
   , geo.longitude as station_lon
-  , w.Temp_Max
-  , w.Temp_Avg
-  , w.Temp_Min
-  , w.Dew_Max
-  , w.Dew_Avg
-  , w.Dew_Min
-  , w.Humidity_Max
-  , w.Humidity_Avg
-  , w.Humidity_Min
-  , w.Wind_spd_Max
-  , w.Wind_spd_Avg
-  , w.Wind_spd_Min
-  , w.Pressure_Max
-  , w.Pressure_Avg
-  , w.Pressure_Min
-  , w.Precipitation_Total
+  , w.temp_max
+  , w.temp_avg
+  , w.temp_min
+  , w.dew_avg
+  , w.wind_spd_max
+  , w.wind_spd_avg
+  , w.pressure_avg
+  , w.precipitation_total
   , count(*) as num_trips
   , sum(if(citi.started_hour between 0 and 5, 1, 0)) as num_trips_hr_0_5
   , sum(if(citi.started_hour between 6 and 9, 1, 0)) as num_trips_hr_6_9
@@ -37,6 +29,6 @@ from (
 ) as citi
 left join {{ ref('stg_geo_data') }} as geo
   on geo.station_name = citi.start_station_name
-left join {{ ref('stg_weather_data') }} as w
-  on w.Date = cast(citi.started_at as date)
-group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23
+left join {{ ref('weather_nyc_dt') }} as w
+  on w.date = cast(citi.started_at as date)
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15

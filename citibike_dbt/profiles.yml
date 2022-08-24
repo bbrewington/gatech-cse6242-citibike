@@ -20,3 +20,12 @@ citibike_dbt:
       threads: 32
       timeout_seconds: 300
       priority: interactive
+
+    dev_local:
+      type: bigquery
+      method: oauth
+      project: "cse-6242-sp22-nyatl"
+      dataset: "DBT_DEV"
+      threads: 32
+      timeout_seconds: 300
+      priority: interactive

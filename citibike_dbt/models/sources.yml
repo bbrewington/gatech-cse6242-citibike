@@ -5,7 +5,13 @@ sources:
     project: cse-6242-sp22-nyatl
     dataset: WEATHER
     tables:
-      - name: weather_data
+      - name: noaa_gsod_2013_onward
+
+  - name: bigquery_public_data__noa_gsod
+    project: bigquery-public-data
+    dataset: noaa_gsod
+    tables:
+      - name: stations
 
   - name: geo
     project: cse-6242-sp22-nyatl

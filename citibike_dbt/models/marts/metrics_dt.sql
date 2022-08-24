@@ -5,25 +5,18 @@ with tripsbyday as (
   FROM {{ ref('stg_citibike_trip_cleaned') }}
   group by 1
 )
+
 select
-    t.date
-  , t.num_trips_per_day
-  , w.Temp_Max
-  , w.Temp_Avg
-  , w.Temp_Min
-  , w.Dew_Max
-  , w.Dew_Avg
-  , w.Dew_Min
-  , w.Humidity_Max
-  , w.Humidity_Avg
-  , w.Humidity_Min
-  , w.Wind_spd_Max
-  , w.Wind_spd_Avg
-  , w.Wind_spd_Min
-  , w.Pressure_Max
-  , w.Pressure_Avg
-  , w.Pressure_Min
-  , w.Precipitation_Total
+  t.date,
+  t.num_trips_per_day,
+  w.temp_max,
+  w.temp_avg,
+  w.temp_min,
+  w.dew_avg,
+  w.wind_spd_max,
+  w.wind_spd_avg,
+  w.pressure_avg,
+  w.precipitation_total
 from tripsByDay as t
-inner join {{ ref('stg_weather_data') }} as w 
+inner join {{ ref('weather_nyc_dt') }} as w 
   on t.date = w.date

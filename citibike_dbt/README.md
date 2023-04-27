@@ -1,6 +1,17 @@
 # dbt project: citibike_dbt
 
-### Folders
+## Environment Setup
+
+Ok to run from top level of repo (there's a cd command in the .sh file)
+
+This will activate a virtualenv & install dbt-bigquery (pinned to a version) into it, and run `dbt debug` as a connection test
+
+```bash
+source citibike_dbt/setup.sh
+```
+
+## Folders
+
 * **/analyses**: analytical sql files that are versioned inside dbt project.  Any query in this directory will be compiled, but not executed (via `dbt compile`), which outputs to `target/compiled/{project name}/analyses/query_file_name.sql` ([link to dbt analyses docs](https://docs.getdbt.com/docs/building-a-dbt-project/analyses))
 * **/macros**: Jinja macro files, analogous to "functions" in Python.  Defined as .sql files ([link to dbt macros docs](https://docs.getdbt.com/docs/building-a-dbt-project/jinja-macros))
 * **/models**: a select statement defined in .sql files in this directory ([link to dbt models docs](https://docs.getdbt.com/docs/building-a-dbt-project/building-models))

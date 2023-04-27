@@ -1,1 +1,0 @@
-select * from {{ ref('src_geo_data') }}

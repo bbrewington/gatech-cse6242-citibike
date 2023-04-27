@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: int_geo_data
+    columns:
+      - name: station_name
+        tests: [unique, not_null]

@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: geo_data
+    project: cse-6242-sp22-nyatl
+    dataset: GEO
+    tables:
+      - name: nyc_neighborhoods_raw_2020
+      - name: ny_zips_2010

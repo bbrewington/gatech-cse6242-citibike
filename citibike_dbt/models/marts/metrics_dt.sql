@@ -2,7 +2,7 @@ with tripsbyday as (
   SELECT
       extract(date FROM started_at) as date
     , count(*) as num_trips_per_day
-  FROM {{ ref('stg_citibike_trip_cleaned') }}
+  FROM {{ ref('stg_citibike_trip') }}
   group by 1
 )
 

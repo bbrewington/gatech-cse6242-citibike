@@ -12,9 +12,3 @@ sources:
     dataset: noaa_gsod
     tables:
       - name: stations
-
-  - name: geo
-    project: cse-6242-sp22-nyatl
-    dataset: GEO
-    tables:
-      - name: geo_data

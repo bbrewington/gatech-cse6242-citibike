@@ -5,6 +5,6 @@
 *.rds
 *.Rproj
 temp*
-venv_*
+venv*/
 .idea
 __pycache__

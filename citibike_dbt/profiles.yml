@@ -1,5 +1,5 @@
 citibike_dbt:
-  target: dev # setting default value
+  target: dev_local # setting default value
   outputs:
     dev:
       type: bigquery
